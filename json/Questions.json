@@ -1,0 +1,47 @@
+{
+"assessmentItems":[{
+"subject":"Mikologia",
+"author":"rosa.arruabarrena@ehu.es",
+"itemBody":{
+"p":"Tripakiek zer dute kapela azpian?"
+},
+"correctResponse":{
+"response":"Eztenak"
+},
+"incorrectResponses":{
+"response":["Filamenduak",
+"Himenioa",
+"Hodiak"]
+}
+},
+{
+"subject":"GIH\/ODS",
+"author":"mafalda001@ikasle.ehu.eus",
+"itemBody":{
+"p":"Garapen Iraunkorreko Helburu kopurua da: "
+},
+"correctResponse":{
+"response":"17"
+},
+"incorrectResponses":{
+"response":["16",
+"19",
+"18"]
+}
+},
+{
+"subject":"O\u00f1atiko mendia",
+"author":"plazaola012@ikasle.ehu.eus",
+"itemBody":{
+"p":"Zein beste izen du Gorgomendik?"
+},
+"correctResponse":{
+"response":"Alo\u00f1a"
+},
+"incorrectResponses":{
+"response":["Buetraitz",
+"Aizkorri",
+"Orkatzategi"]
+}
+}]
+}

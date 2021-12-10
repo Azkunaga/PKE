@@ -1,0 +1,19 @@
+HAUTAZKOEN GARAPENA
+
+---------------------------------------------
+
+LEHEN HAUTAZKOAREN GARAPENAREN AZALPENA:
+
+Lehen hautazko hau burutu ahal izateko, ajax+jquery erabili ditugu. For eta if baten bitartez gure e-postari dagokion galdera kopurua kalkulatu dugu eta emaitza hau setinterval funtzioaz baliatuz 10 segunduero eguneratzen da eta HandlingQuizezAjax.php-eko span batean bistaratzen da.
+
+---------------------------------------------
+
+BIGARREN HAUTAZKOAREN GARAPENAREN AZALPENA:
+
+Enuntziatuan ez zuen zehazten JQuery erabili behar zenik edo ez, beraz, AJAX eta Javascript erbili ditugu, JQuery gabe. Script-a zuzenean HandlingQuizezAjax.php fitxategian inplementatu dugu, enuntziatuan ez baitzuen esaten beste fitxategirik sortu behar zenik. Gainera, ataza hau burutzeko XML fitxategi bat eta bi PHP fitxategi erabili ditugu:
+
+·UserCounter.xml fitxategia
+	Fitxategi honek kontagailu lana egiten du. Kontagailu etiketa XML fitxategiaren root-a da eta balioa etiketa kontagailuari dagokion balioa gordetzen du.
+
+·IncreaseGlobalCounter.php, DecreaseGlobalCounter.php fitxategiak:
+	Aipatutako XML fitxategitik kontagailuaren balioa eskuratuko dugu, aurreko laborategian erabilitako kodean oinarrituz, eta hau eguneratu egiten da inkrementatuz edo dekrementatuz login edo logout egitean, hurrenez hurren. Horretarako, LogIn.php-n IncreaseGlobalCounter.php fitxategiaren include-a egiten da eta berdin Logout.php eta DecreaseGlobalCounter.php fitxategiekin.

@@ -1,0 +1,11 @@
+Erabili dugun zerbitzua nabigatzaileak dakarren geolokalizazio zerbitzua da. Credits.php orriaren barruan, JavaScript script bat (<script></script>) 
+inplementatu dugu, bertan bi funtzio ditugu: getLocation() eta showLocation(position). getLocation() funtzioak navigator.geolocation bitartez lokalizazioa
+lortzen du; baldin eta navigator.geolocation exititzen bada, "navigator.geolocation.getCurrentPosition(showPosition);" erabili dugu, bestela, testu bat
+agertuko da nabigatzaileak geolokalizazioa ahalbidetzen ez duela esanez.
+
+showLocation(position) funtzioan, getLocation() funtzioan lortutako lokalizazioa bistaratzen du, besterik gabe.
+
+Ez dugu JSON erabili.
+
+Inplementatu dugun geolokalizazioa gauzatzeko nabigatzaileari lokalizazioa jakiteko baimena eman behar zaio.
+Probak egin ditugunean hau itzuli digu: Latitude: 43.302747 Longitude: -1.9783761

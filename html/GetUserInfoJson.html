@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    #divA{
+      border-style: none;
+      width: 350px;
+      margin: auto;
+    }
+
+    .derrigorrezkoa{
+		    color: red;
+    }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/GetUserInfoJson.js"> </script>
+
+</head>
+
+<body>
+  <section class="main" id="s1">
+    <h1 align="center">Erabiltzaile baten datuak bilatu eposta sartuz</h1>
+    <div id="divA" align="center">
+      <form id="galderenF" name="galderenF" enctype="multipart/form-data">
+        <label for="email">Ikaslearen EHUko eposta:</label><br>
+        <input type="text" id="email" name="email" ><span class="derrigorrezkoa"> *</span><br><br>
+        <label for="telf">Telefono zenbakia:</label><br>
+        <input type="text" id="telf" name="telf"><br><br>
+        <label for="izena">Ikaslearen izena:</label><br>
+        <input type="text" id="izena" name="izena" ><br><br>
+        <label for="abizenak">Ikaslearen abizena/k:</label><br>
+        <input type="text" id="abizenak" name="abizenak"><br><br>
+        <button type="button" id="osatu" name="osatu">Osatu eremuak</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
