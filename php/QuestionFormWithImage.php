@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<?php include 'Segurtasuna.php'?>
 <head>
   <?php include '../html/Head.html'?>
   <style type="text/css">
@@ -45,7 +46,7 @@
       		<option value="3">Handia</option>
         </select><span class="derrigorrezkoa"> *</span><br><br>
         <input type="text" id="gaia" name="gaia" placeholder="Galderaren gaia"><span class="derrigorrezkoa"> *</span><br><br>
-        <input type="file" id="img" name="img" accept="image/*" onchange="loadFile(event)"><br>
+        <input type="file" id="img" name="img" accept="image/*" onchange="loadFile(event)"><br><br>
 		    <img id="output" height="100" />
         <p class="derrigorrezkoa">* Eremua betetzea derrigrrezkoa da</p><br>
         <input type="button" id="hustu_img" value="HUSTU ARGAZKIA" onclick="ezabatuArgazkia()">

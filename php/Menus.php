@@ -28,23 +28,14 @@
 
 <nav class='main' id='n1' role='navigation'>
   <?php
-  echo "<span><a href='Layout.php'>Hasiera</a></span>";
-  //echo "<span><a href='QuestionFormWithImage.php'>Sortu galderak</a></span>";
-  echo "<span><a href='Credits.php'>Kredituak</a></span>";
-
+  echo "<span><a href='Layout.php'>Quiz Jokoa</a></span>";
+  
   if(isset($_SESSION['email'])){
-    if ($_SESSION['erabMota']=="ikaslea"){
-      echo "<span><a href='HandlingQuizesAjax.php'>Kudeatu galderak</a></span>";
-    }else if($_SESSION['email']=="admin@ehu.es"){
-      echo "<span><a href='HandlingAccounts.php'>Kudeatu erabiltzaileak</a></span>";
-    }else if($_SESSION['erabMota']=="irakaslea") {
-      echo "<span><a href='HandlingQuizesAjax.php'>Kudeatu galderak</a></span>";
-      echo "<span><a href='IsVip.php'>VIPa al da?</a></span>";
-      echo "<span><a href='AddVip.php'>VIPa gehitu</a></span>";
-      echo "<span><a href='DeleteVip.php'>VIPa ezabatu</a></span>";
-      echo "<span><a href='ShowVips.php'>VIP zerrenda</a></span>";
-    }
+      echo "<span><a href='QuestionFormWithImage.php'>Galdera Sortu</a></span>";
+      echo "<span><a href='ShowQuestionsWithImage.php'>Galderak Ikusi</a></span>";
   }
+
+  echo "<span><a href='Credits.php'>Kredituak</a></span>";
 
   ?>
 </nav>

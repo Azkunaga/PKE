@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include 'Segurtasuna.php'?>
 <html>
 <head>
   <?php include '../html/Head.html'?>

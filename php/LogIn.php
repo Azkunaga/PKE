@@ -41,13 +41,7 @@
 					include 'IncreaseGlobalCounter.php';
 					$_SESSION['email'] = $erabemail;
 					$_SESSION['erabMota'] = $row->mota;
-					if($erabemail =="admin@ehu.es"){
-						echo ("<script> alert('Saioa hasi duzu! Ongi etorri'); window.location='HandlingAccounts.php'</script>");
-					}else if($row->mota =="ikaslea"){
-						echo ("<script> alert('Saioa hasi duzu! Ongi etorri'); window.location='HandlingQuizesAjax.php'</script>");
-					}else{
-						echo ("<script> alert('Saioa hasi duzu! Ongi etorri'); window.location='Layout.php'</script>");
-					}
+					echo ("<script> alert('Saioa hasi duzu! Ongi etorri'); window.location='Layout.php'</script>");
 				}else{
 					echo("<script> alert('Errorea kautotzerakoan, hash desberdina')</script>");
 				}
