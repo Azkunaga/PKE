@@ -15,7 +15,8 @@
 					<label for="emaillogin">Email:</label>
 					<input type="email" id="emaillogin" name="emaillogin"><br><br>
 					<label for="passwordlogin">Password:</label>
-					<input type="password" id="passwordlogin" name="passwordlogin"><br><br>
+					<input type="password" id="passwordlogin" name="passwordlogin"><br>
+					<a href="#">Pasahizta ahaztu duzu?</a><br><br>
 					<input type="submit" value="Saioa Hasi" id="submitlogin" name="submitlogin"><br><br>
 				</fieldset>
 			</form>
