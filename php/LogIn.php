@@ -5,24 +5,38 @@
 	<meta charset="utf.8">
 	<?php include '../html/Head.html'?>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
 	<?php include '../php/Menus.php' ?>
 	<section class="main" id="s1">
-    <div id="divA">
-			<form id="Login" name="login" method="post" action="LogIn.php" enctype="multipart/form-data">
-				<fieldset>
-					<legend>Saio hasiera panela</legend><br>
-					<label for="emaillogin">Email:</label>
-					<input type="email" id="emaillogin" name="emaillogin"><br><br>
-					<label for="passwordlogin">Password:</label>
-					<input type="password" id="passwordlogin" name="passwordlogin"><br>
-					<a href="#">Pasahizta ahaztu duzu?</a><br><br>
-					<input type="submit" value="Saioa Hasi" id="submitlogin" name="submitlogin"><br><br>
-				</fieldset>
-			</form>
+		<div class="row">
+			<div class="col-sm-4">
+
+			</div>
+			<div class="col-sm-4">
+				<div id="divA">
+					<form id="Login" name="login" method="post" action="LogIn.php" enctype="multipart/form-data">
+						<fieldset>
+							<legend>Saio hasiera panela</legend><br>
+							<div class="mb-3">
+							  <input type="email" class="form-control" id="emaillogin" name="emaillogin" placeholder="Sartu zure email-a">
+							</div>
+							<div class="mb-3">
+							  <input type="password" class="form-control" id="passwordlogin" name="passwordlogin" placeholder="Sartu zure pasahitza">
+							</div>
+							<a href="#">Pasahizta ahaztu duzu?</a><br><br>
+							<input type="submit" value="Saioa Hasi" class="btn btn-primary" id="submitlogin" name="submitlogin"><br><br>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div class="col-sm-4">
+
+			</div>
 		</div>
+
 	</section>
 	<?php
 	include '../php/DbConfig.php';
@@ -48,7 +62,7 @@
 				}else{
 					echo("<script> alert('Errorea kautotzerakoan, hash desberdina')</script>");
 				}
-				
+
 			}else{
 				echo("<script> alert('Errorea kautotzerakoan')</script>");
 			}
