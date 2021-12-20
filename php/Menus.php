@@ -27,9 +27,12 @@
             <p><?php echo $row["email"] ?></p>
           </div>
           <?php
-        	if(isset($row['image'])){
+        	if($row['image'] != null){
         		echo '<img src=data:image/jpg;charset=utf8;base64,'. base64_encode($row['image']).' height="50"/><br>';
         	}
+          else {
+            echo '<i class="bi bi-person-circle"></i>';
+          }
         }else {?>
           <a class="btn btn-dark" href="LogIn.php" role="button">Login/Register</a>
           <i class="bi bi-person-circle"></i>
