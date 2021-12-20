@@ -26,8 +26,11 @@
 							<div class="mb-3">
 							  <input type="password" class="form-control" id="passwordlogin" name="passwordlogin" placeholder="Sartu zure pasahitza">
 							</div>
-							<a href="#">Pasahizta ahaztu duzu?</a><br><br>
-							<input type="submit" value="Saioa Hasi" class="btn btn-primary" id="submitlogin" name="submitlogin"><br><br>
+							<div class="d-grid col-12">
+								<input type="submit" value="Saioa Hasi" class="btn btn-primary" id="submitlogin" name="submitlogin">
+								<a href="#">Pasahizta ahaztu duzu?</a><br>
+								<button class="btn btn-primary">Erregistratu</button>
+							</div>
 						</fieldset>
 					</form>
 				</div>
