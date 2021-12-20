@@ -67,7 +67,7 @@
            ?>
 
 
-<<<<<<< HEAD
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,16 +95,13 @@
       <li class="nav-item">
         <a class="nav-link" href="LogIn.php">Login</a>
       </li>
-      <!--<li class="nav-item">
+      <li class="nav-item">
       <a class="nav-link" href="#">Disabled</a>
       </li>-->
      </ul>
-=======
-
 
         </ul>
       </div>
->>>>>>> 58f20bc9eaee4e548f149bba1635529c57689d88
     </div>
   </div>
 </nav>
