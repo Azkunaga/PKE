@@ -2,12 +2,10 @@
 <html>
 <head>
   <?php include '../html/Head.html'?>
-  
+
   <script type="text/javascript" src="../js/ShowImageInForm.js"> </script>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="../js/EgiaztapenaAjax.js"> </script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,7 +14,7 @@
     <div class="row">
       <div class="col-sm-4 mx-auto">
       <form id="singUp" name="singUp" action="AddUser.php" method="post" enctype="multipart/form-data">
-        
+
           <label for="erabMota">Erabiltzaile mota:</label><br><br>
           <input type="radio" id="irak" name="mota" value="irakaslea">
           <label for="irak">Irakaslea</label> &nbsp; &nbsp; &nbsp;
@@ -40,7 +38,7 @@
             <input type="reset" id="hustu" class="btn btn-primary" value="HUSTU" onclick="ezabatuArgazkia()"><br>
             <input type="submit" id="submit" class="btn btn-primary" value="Erregistratu" name="Erregistratu">
           </div>
-        
+
 
       </form>
       </div>

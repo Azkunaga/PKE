@@ -20,6 +20,7 @@
         	$sql= "SELECT * FROM User WHERE email = '$erabemail'";
         	$ema= mysqli_query($esteka, $sql);
         	$row= $ema->fetch_assoc(); //mysqli_fetch_array($ema, MYSQLI_ASSOC);
+          echo $row['image'];
         	if(isset($row['image'])){
         		echo ('<img src=data:image/jpg;charset=utf8;base64,'. base64_encode($row['image']).' height="50"/><br>');
         	}
