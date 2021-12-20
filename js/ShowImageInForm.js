@@ -19,6 +19,4 @@ function ezabatuArgazkia(){
 	document.getElementById("defaultImg").style="display:block";
 }
 
-$("#output").click(function () {
-    $("#img").trigger('click');
-});
+
