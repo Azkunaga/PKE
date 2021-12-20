@@ -36,11 +36,11 @@
             $ema= mysqli_query($esteka, $sql);
             while ( $row= mysqli_fetch_array($ema, MYSQLI_ASSOC)) {
               echo '<div class="col-6">
-              <p><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button with data-bs-target</button>
+              <p><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse'.$row['id'].'" aria-expanded="false" aria-controls="collapseExample">'.$row['galdera'].'</button>
               </p>
-              <div class="collapse" id="collapseExample">
+              <div class="collapse" id="collapse'.$row['id'].'">
                 <div class="card card-body">
-                  '.$row['id'].''.$row['email'].''.$row['galdera'].''.$row['zuzena'].''.$row['okerra1'].''.$row['okerra2'].''.$row['okerra3'].''.$row['zailtasuna'].''.$row['gaia'].'<img src="data:image/jpg;charset=utf8;base64,'.base64_encode($row['image']).'" height="50"/>
+                  Egilea: '.$row['email'].'<br>Erantzun zuzena: '.$row['zuzena'].'<br>Erantzun okerra 1: '.$row['okerra1'].'<br>Erantzun okerra 2: '.$row['okerra2'].'<br>Erantzun okerra 3: '.$row['okerra3'].'<br>Zailtasuna: '.$row['zailtasuna'].'<br>Gaia: '.$row['gaia'].'<br><img src="data:image/jpg;charset=utf8;base64,'.base64_encode($row['image']).'" height="60%" width="60%"/>
                 </div>
               </div>
             </div>';
