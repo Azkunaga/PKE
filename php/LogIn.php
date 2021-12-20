@@ -13,10 +13,7 @@
 	<?php include '../php/Menus.php' ?>
 	<section class="main" id="s1">
 		<div class="row">
-			<div class="col-sm-4">
-
-			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 mx-auto">
 				<div id="divA">
 					<form id="Login" name="login" method="post" action="LogIn.php" enctype="multipart/form-data">
 						<fieldset>
@@ -37,9 +34,6 @@
 						<button class="btn btn-primary" onclick="window.location='SignUp.php'">Erregistratu</button>
 					</div>
 				</div>
-			</div>
-			<div class="col-sm-4">
-
 			</div>
 		</div>
 
