@@ -12,17 +12,15 @@
   <?php include '../php/Menus.php' ?>
   <section class="main" id="s1">
     <div class="row">
-      <div class="col-sm-4 mx-auto">
+      <div class="col-sm-6 mx-auto">
       <form id="singUp" name="singUp" action="AddUser.php" method="post" enctype="multipart/form-data">
-
           <label for="erabMota">Erabiltzaile mota:</label><br><br>
           <input type="radio" id="irak" name="mota" value="irakaslea">
           <label for="irak">Irakaslea</label> &nbsp; &nbsp; &nbsp;
           <input type="radio" id="ikas" name="mota" value="ikaslea">
           <label for="ikas">Ikaslea</label><br><br>
           <label for="email">Email</label><br>
-        	<input type="text" class="form-control" id="email" name="email" onblur="egiaztatu(this.value)" placeholder="Sartu zure email-a"><br>
-          <p id="egiaztapena" name="egiaztapena"></p>
+        	<input type="text" class="form-control" id="email" name="email" placeholder="Sartu zure email-a"><br>
         	<br><label for="deitura">Izen abizenak</label><br>
         	<input type="text" class="form-control" id="deitura" name="deitura" placeholder="Sartu zure izen eta abizenak"><br><br>
         	<label for="zuzena">Pasahitza</label><br>

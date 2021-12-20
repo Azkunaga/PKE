@@ -34,7 +34,7 @@
           </div>
           <?php
         	if(isset($row['image'])){
-        		echo ('<img src=data:image/jpg;charset=utf8;base64,'. base64_encode($row['image']).' height="50"/><br>');
+        		echo '<img src=data:image/jpg;charset=utf8;base64,'. base64_encode($row['image']).' height="50"/><br>';
         	}
         }else {?>
           <a class="btn btn-dark" href="LogIn.php" role="button">Login/Register</a>
@@ -52,33 +52,32 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-          <?php
-          echo "<a class='nav-link' href='Layout.php' aria-current='page'>Quiz Jokoa</a>";
-          ?>
+            <a class="nav-link" href="Layout.php" aria-current="page">Quiz Jokoa</a>
           </li>
           <?php
-          if(isset($_SESSION['email'])){ ?>
-            <li class="nav-item">
-              <a class="nav-link" href="QuestionFormWithImage.php">Galdera Sortu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ShowQuestionsWithImage.php">Galderak Ikusi</a>
-            </li>
-          <?php
+          if(isset($_SESSION['email'])){
+            echo '<li class="nav-item"><a class="nav-link" href="QuestionFormWithImage.php">Galdera Sortu</a></li>';
+            echo '<li class="nav-item"><a class="nav-link" href="ShowQuestionsWithImage.php">Galderak Ikusi</a></li>';
           }
           ?>
           <li class="nav-item">
             <a class="nav-link" href="Credits.php">Kredituak</a>
           </li>
           <?php
-            if(isset($_SESSION['email'])){ ?>
-              <li class="nav-item">
-                <a class="nav-link" href="Logout.php">Logout</a>
-              </li>
-          <?php
+            if(isset($_SESSION['email'])){ 
+              echo '<li class="nav-item"><a class="nav-link" href="Logout.php">Logout</a></li>';
             }
-           ?>
+          ?>
+        </ul>
       </div>
     </div>
+    <!--<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <li class="nav-item">
+        <a class="nav-link" href="Layout.php" aria-current="page">Quiz Jokoa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Credits.php">Kredituak</a>
+      </li>
+    </ul>-->
   </div>
 </nav>
