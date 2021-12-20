@@ -8,12 +8,6 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand text-light" href="#">Quiz Jokoa</a>
-      <!-- <?php
-      if(isset($_SESSION['email'])){ ?>
-        <a class="nav-link text-light" href="QuestionFormWithImage.php">Galdera Sortu</a>
-        <a class="nav-link text-light" href="ShowQuestionsWithImage.php">Galdera Ikusi</a>
-      <?php } ?>
-      <a class="nav-link text-light" href="Credits.php">Kredituak</a> -->
     <div class="offcanvas offcanvas-start-lg bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header d-flex d-lg-none">
         <?php
@@ -39,11 +33,6 @@
         }else {?>
           <a class="btn btn-dark" href="LogIn.php" role="button">Login/Register</a>
           <i class="bi bi-person-circle"></i>
-        	<!-- echo ('<img src="../images/Anonymous.png" height="50"/><br>');
-          echo "Anonymous ";
-          echo "<span class='right'><a href='SignUp.php'>Erregistratu</a></span>";
-          echo " ";
-          echo "<span class='right'><a href='LogIn.php'>Login</a></span>";-->
         <?php
         }
         ?>
