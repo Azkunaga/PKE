@@ -8,14 +8,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand text-light" href="#">Quiz Jokoa</a>
-      <?php
+      <!-- <?php
       if(isset($_SESSION['email'])){ ?>
         <a class="nav-link text-light" href="QuestionFormWithImage.php">Galdera Sortu</a>
         <a class="nav-link text-light" href="ShowQuestionsWithImage.php">Galdera Ikusi</a>
       <?php } ?>
-      <a class="nav-link text-light" href="Credits.php">Kredituak</a>
-    <div class="offcanvas offcanvas-start bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
+      <a class="nav-link text-light" href="Credits.php">Kredituak</a> -->
+    <div class="offcanvas offcanvas-start-lg bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header d-flex d-lg-none">
         <?php
         include '../php/DbConfig.php';
 
@@ -49,23 +49,23 @@
         ?>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <div class="offcanvas-body p-lg-0">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="Layout.php" aria-current="page">Quiz Jokoa</a>
+            <a class="nav-link text-light" href="Layout.php" aria-current="page">Quiz Jokoa</a>
           </li>
           <?php
           if(isset($_SESSION['email'])){
-            echo '<li class="nav-item"><a class="nav-link" href="QuestionFormWithImage.php">Galdera Sortu</a></li>';
-            echo '<li class="nav-item"><a class="nav-link" href="ShowQuestionsWithImage.php">Galderak Ikusi</a></li>';
+            echo '<li class="nav-item"><a class="nav-link text-light" href="QuestionFormWithImage.php">Galdera Sortu</a></li>';
+            echo '<li class="nav-item"><a class="nav-link text-light" href="ShowQuestionsWithImage.php">Galderak Ikusi</a></li>';
           }
           ?>
           <li class="nav-item">
-            <a class="nav-link" href="Credits.php">Kredituak</a>
+            <a class="nav-link text-light" href="Credits.php">Kredituak</a>
           </li>
           <?php
-            if(isset($_SESSION['email'])){ 
-              echo '<li class="nav-item"><a class="nav-link" href="Logout.php">Logout</a></li>';
+            if(isset($_SESSION['email'])){
+              echo '<li class="nav-item"><a class="nav-link text-light" href="Logout.php">Logout</a></li>';
             }
           ?>
         </ul>
