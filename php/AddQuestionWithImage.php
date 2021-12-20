@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php include 'SegurtasunaIkasleaIrakaslea.php' ?>
+<?php include 'Segurtasuna.php' ?>
 <html>
 <head>
   <?php include '../html/Head.html'?>
