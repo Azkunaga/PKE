@@ -1,6 +1,8 @@
 @charset "utf-8";
 * 						{margin: 0; padding: 0;}
-body						{font: 16px Georgia, serif;}
+body{
+	font: 16px Playfair Display !important;
+}
 
 #page-wrap				{margin: 2% auto; color: white;}
 #page-wrap >.main 		{padding: 1%;
@@ -27,4 +29,12 @@ nav span             				{ margin: 0px 10px 0px 0px;
 
 i.bi.bi-person-circle{
   font-size: xxx-large;
+}
+
+
+.form-control {
+  border: 0 !important ;
+  outline: 0 !important ;
+  background: transparent !important ;
+  border-bottom: 1px solid black !important ;
 }
