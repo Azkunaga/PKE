@@ -37,3 +37,8 @@ i.bi.bi-person-circle{
   background: transparent !important ;
   border-bottom: 1px solid black !important ;
 }
+
+@media (max-width:992px)
+	/*.nav-laptop {
+			display: none;
+	}*/

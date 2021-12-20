@@ -27,37 +27,37 @@
     <div id="divA">
       <form id="galderenF" name="galderenF" action="AddQuestionWithImage.php?email=$email" method="post" enctype="multipart/form-data">
         <div class="mb-3">
-          <label for="email">Email:</label>
-        	<input type="text" class="form-control" id="email" name="email" placeholder="Sartu zure email-a" onblur="validateEmail()"><span class="derrigorrezkoa"> *</span>
+          <label for="email">Email:</label><span class="derrigorrezkoa"> *</span>
+        	<input type="text" class="form-control" id="email" name="email" placeholder="Sartu zure email-a" onblur="validateEmail()">
         </div>
         <div class="mb-3">
-          <label for="galdera">Galdera:</label>
-        	<input type="text" id="galdera" name="galdera" class="form-control" onblur="validateGaldera()"><span class="derrigorrezkoa"> *</span>
+          <label for="galdera">Galdera:</label><span class="derrigorrezkoa"> *</span>
+        	<input type="text" id="galdera" name="galdera" class="form-control" onblur="validateGaldera()">
         </div>
         <div class="mb-3">
-          <label for="zuzena">Erantzun zuzena:</label>
-        	<input type="text" id="zuzena" name="zuzena" class="form-control"><span class="derrigorrezkoa"> *</span>
+          <label for="zuzena">Erantzun zuzena:</label><span class="derrigorrezkoa"> *</span>
+        	<input type="text" id="zuzena" name="zuzena" class="form-control">
         </div>
         <div class="mb-3">
-          <label for="okerra">Erantzun okerra:</label>
-        	<input type="text" id="okerra1" name="okerra1" class="form-control"><span class="derrigorrezkoa"> *</span>
+          <label for="okerra">Erantzun okerra:</label><span class="derrigorrezkoa"> *</span>
+        	<input type="text" id="okerra1" name="okerra1" class="form-control">
         </div>
         <div class="mb-3">
-          <label for="okerra">Erantzun okerra:</label>
-        	<input type="text" id="okerra2" name="okerra2" class="form-control"><span class="derrigorrezkoa"> *</span>
+          <label for="okerra">Erantzun okerra:</label><span class="derrigorrezkoa"> *</span>
+        	<input type="text" id="okerra2" name="okerra2" class="form-control">
         </div>
         <div class="mb-3">
-          <label for="okerra">Erantzun okerra:</label>
-        	<input type="text" id="okerra3" name="okerra3" class="form-control"><span class="derrigorrezkoa"> *</span>
+          <label for="okerra">Erantzun okerra:</label><span class="derrigorrezkoa"> *</span>
+        	<input type="text" id="okerra3" name="okerra3" class="form-control">
         </div>
         <div class="mb-3">
-          <label for="zailtasuna">Zailtasuna:</label>
+          <label for="zailtasuna">Zailtasuna:</label><span class="derrigorrezkoa"> *</span>
         	<select id="zailtasuna" name="zailtasuna" class="form-select">
         		<option value="" style="display: none;"></option>
         		<option value="1">Txikia</option>
         		<option value="2">Ertaina</option>
         		<option value="3">Handia</option>
-          </select><span class="derrigorrezkoa"> *</span>
+          </select>
         </div>
         <div class="mb-3">
           <input type="text" id="gaia" name="gaia" class="form-control" placeholder="Galderaren gaia"><span class="derrigorrezkoa"> *</span><br><br>

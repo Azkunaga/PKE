@@ -8,6 +8,12 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand text-light" href="#">Quiz Jokoa</a>
+      <?php
+      if(isset($_SESSION['email'])){ ?>
+        <a class="nav-link text-light" href="QuestionFormWithImage.php">Galdera Sortu</a>
+        <a class="nav-link text-light" href="ShowQuestionsWithImage.php">Galdera Ikusi</a>
+      <?php } ?>
+      <a class="nav-link text-light" href="Credits.php">Kredituak</a>
     <div class="offcanvas offcanvas-start bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <?php
@@ -21,6 +27,12 @@
         	$ema= mysqli_query($esteka, $sql);
         	$row= $ema->fetch_assoc(); //mysqli_fetch_array($ema, MYSQLI_ASSOC);
           echo $row['image'];
+          ?>
+          <div class="row">
+            <h3><?php echo $row["deitura"] ?></h3>
+            <p><?php echo $row["email"] ?></p>
+          </div>
+          <?php
         	if(isset($row['image'])){
         		echo ('<img src=data:image/jpg;charset=utf8;base64,'. base64_encode($row['image']).' height="50"/><br>');
         	}
