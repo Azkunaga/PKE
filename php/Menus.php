@@ -26,16 +26,37 @@
 
 </header>
 
-<nav class='main' id='n1' role='navigation'>
-  <?php
-  echo "<span><a href='Layout.php'>Quiz Jokoa</a></span>";
-  
-  if(isset($_SESSION['email'])){
-      echo "<span><a href='QuestionFormWithImage.php'>Galdera Sortu</a></span>";
-      echo "<span><a href='ShowQuestionsWithImage.php'>Galderak Ikusi</a></span>";
-  }
-
-  echo "<span><a href='Credits.php'>Kredituak</a></span>";
-
-  ?>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="Layout.php">Quiz Jokoa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Credits.php">Kredituak</a>
+      </li>
+      <?php
+        if(isset($_SESSION['email'])){
+            echo '<li class="nav-item"><a class="nav-link" href="QuestionFormWithImage.php">Galdera Sortu</a></li>';
+            echo '<li class="nav-item"><a class="nav-link" href="ShowQuestionsWithImage.php">Galderak Ikusi</a></li>';
+            //echo "<span><a href='QuestionFormWithImage.php'>Galdera Sortu</a></span>";
+            //echo "<span><a href='ShowQuestionsWithImage.php'>Galderak Ikusi</a></span>";
+        }
+      ?>
+      <li class="nav-item">
+        <a class="nav-link" href="SignUp.php">Erregistratu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="LogIn.php">Login</a>
+      </li>
+      <!--<li class="nav-item">
+      <a class="nav-link" href="#">Disabled</a>
+      </li>-->
+     </ul>
+    </div>
+  </div>
 </nav>
