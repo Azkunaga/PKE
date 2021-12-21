@@ -28,7 +28,7 @@
   <?php include '../php/DbConfig.php' ?>
   <section class="main" id="s1">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center mx-auto">
 
           <?php
             $esteka = mysqli_connect ($zerbitzaria, $erabiltzailea, $gakoa, $db) or die ("Errorea Dbra konektatzerakoan");

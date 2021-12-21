@@ -123,4 +123,24 @@ footer{
   padding: 20px;
 }
 
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar-nav.navbar-left {
+    padding-left: 30px;
+}
+
+.navbar-nav.navbar-right {
+    position: absolute;
+    right: 0%;
+    transform: translatex(-50%);
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
 

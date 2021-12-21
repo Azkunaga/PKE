@@ -17,7 +17,7 @@
 
 <body>
   <?php include '../php/Menus.php' ?>
-  <section class="main" id="s1" style="overflow: auto;">
+  <section class="main" id="s1">
     <div class="row">
     <div id="divA" class="col-sm-6 mx-auto">
       <form id="galderenF" name="galderenF" action="AddQuestionWithImage.php?email=$email" method="post" enctype="multipart/form-data">
