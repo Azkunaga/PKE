@@ -35,7 +35,7 @@
             $sql= "SELECT * FROM Question";
             $ema= mysqli_query($esteka, $sql);
             while ( $row= mysqli_fetch_array($ema, MYSQLI_ASSOC)) {
-              echo '<div class="d-grid col-6 mb-3">
+              echo '<div class="d-grid col-sm-6 mb-3">
               <span><button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse'.$row['id'].'" aria-expanded="false" aria-controls="collapseExample" style="width: 100%; background-color: #CDCDD3">'.$row['galdera'].'</button>
               </span>
               <div class="collapse" id="collapse'.$row['id'].'">
