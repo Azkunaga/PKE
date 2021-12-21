@@ -35,12 +35,12 @@
             $sql= "SELECT * FROM Question";
             $ema= mysqli_query($esteka, $sql);
             while ( $row= mysqli_fetch_array($ema, MYSQLI_ASSOC)) {
-              echo '<div class="col-6">
-              <p><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse'.$row['id'].'" aria-expanded="false" aria-controls="collapseExample">'.$row['galdera'].'</button>
-              </p>
+              echo '<div class="d-grid col-6 mb-3">
+              <span><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse'.$row['id'].'" aria-expanded="false" aria-controls="collapseExample">'.$row['galdera'].'</button>
+              </span>
               <div class="collapse" id="collapse'.$row['id'].'">
-                <div class="card card-body">
-                  Egilea: '.$row['email'].'<br>Erantzun zuzena: '.$row['zuzena'].'<br>Erantzun okerra 1: '.$row['okerra1'].'<br>Erantzun okerra 2: '.$row['okerra2'].'<br>Erantzun okerra 3: '.$row['okerra3'].'<br>Zailtasuna: '.$row['zailtasuna'].'<br>Gaia: '.$row['gaia'].'<br><img src="data:image/jpg;charset=utf8;base64,'.base64_encode($row['image']).'" height="60%" width="60%"/>
+                <div class="card card-body ">
+                  <p><b>Egilea: </b>'.$row['email'].'<br><b>Erantzun zuzena: </b>'.$row['zuzena'].'<br><b>Erantzun okerra 1: </b> '.$row['okerra1'].'<br><b>Erantzun okerra 2: </b> '.$row['okerra2'].'<b><br>Erantzun okerra 3: </b> '.$row['okerra3'].'<br><b>Zailtasuna: </b>'.$row['zailtasuna'].'<br><b>Gaia: </b> '.$row['gaia'].'<br><br><img src="data:image/jpg;charset=utf8;base64,'.base64_encode($row['image']).'" width="40%"/></p>
                 </div>
               </div>
             </div>';
