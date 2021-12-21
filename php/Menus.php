@@ -8,9 +8,9 @@
                 Hizkuntza
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Euskera</a></li>
-                <li><a class="dropdown-item" href="#">Gaztelania</a></li>
-                <li><a class="dropdown-item" href="#">Ingelesa</a></li>
+                <li><a class="dropdown-item" href="#">Euskara <img src="../images/euskara.png" height="10"></a></li>
+                <li><a class="dropdown-item" href="#">Gaztelania <img src="../images/español.png" height="10"></a></li>
+                <li><a class="dropdown-item" href="#">Ingelesa <img src="../images/ingles.png" height="10"></a></li>
               </ul>
             </li>
         </ul>
@@ -114,3 +114,4 @@
   </div>
 </nav>
 </div>
+
