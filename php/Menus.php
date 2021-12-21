@@ -68,7 +68,7 @@
           </div>
           <?php
         	if($row['image'] != null){
-        		echo '<img src=data:image/jpg;charset=utf8;base64,'. base64_encode($row['image']).' height="50" /><br>';
+        		echo '<img style="border-radius: 50%" src=data:image/jpg;charset=utf8;base64,'. base64_encode($row['image']).' height="50" /><br>';
         	}
           else {
             echo '<i class="bi bi-person-circle"></i>';

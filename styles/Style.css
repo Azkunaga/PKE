@@ -109,15 +109,9 @@ i.bi.bi-person-circle{
   }
 
 
-html{  
-  position: relative;
-  min-height: 100%;
-}
-
 footer{
   background: #eee; 
   text-align: center;
-  position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -159,5 +153,11 @@ a:link, a:visited, a:active {
   font-weight: 700;
 }
 
-
+.btn-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-top: 10px;
+	padding-right: 10em;
+}
 
