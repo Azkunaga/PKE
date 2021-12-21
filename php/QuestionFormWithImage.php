@@ -53,15 +53,15 @@
         <div class="mb-3">
           <input type="text" id="gaia" name="gaia" class="form-control" placeholder="Galderaren gaia"><br><br>
         </div>
-        <div style="display: flex;">
+        <div class="mb-3" id="irudiaDiv">
           <img id="defaultImg" src="../images/iconoPaisaje.png" onclick="document.getElementById('img').click()" height="100"/>
-          <input type="file" id="img" name="img" class="form-control-file" accept="image/*" onchange="loadFile(event)" style="display: none">
+          <input type="file" id="img" name="img" class="form-control-file" accept="image/*" onchange="loadFile(event)">
           <img id="output" src="../images/iconoPaisaje.png" />
-          <input type="button" style="height: 30%;"class="btn btn-primary" id="hustu_img" value="HUSTU ARGAZKIA" onclick="ezabatuArgazkia()">
-        </div><br>
+          <input type="button" class="btn btn-primary btn-lg" id="hustu_img" value="HUSTU ARGAZKIA" onclick="ezabatuArgazkia()">
+        </div>
         <div class="d-grid col-12">
-          <input type="reset" id="hustu" class="btn btn-primary" value="HUSTU" onclick="ezabatuArgazkia()"><br>
-          <input type="submit" id="submit" class="btn btn-primary" value="BIDALI">
+          <input type="reset" id="hustu" class="btn btn-primary btn-lg" value="HUSTU" onclick="ezabatuArgazkia()"><br>
+          <input type="submit" id="submit" class="btn btn-primary btn-lg" value="BIDALI">
         </div>
       </form>
     </div>

@@ -19,8 +19,8 @@ nav span             				{ margin: 0px 10px 0px 0px;
 
 #output{
 	display: none;
-	margin: 0 auto;
 	height: 150px;
+  float: left;
 }
 
 .derrigorrezkoa{
@@ -142,5 +142,19 @@ footer{
 a:link, a:visited, a:active {
     text-decoration:none;
 }
+
+
+#irudiaDiv{
+  display: inline-block; position: relative; width: 100%;
+}
+
+#img{
+  display: none;
+}
+
+#hustu_img{
+  position: absolute; right: 0; top: 20%;" class="btn btn-primary btn-lg;
+}
+
 
 
