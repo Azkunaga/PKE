@@ -1,8 +1,6 @@
 <div id='page-wrap'>
-<header class='main' id='h1'>
 
-</header>
-<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -73,3 +71,4 @@
     </ul>-->
   </div>
 </nav>
+</div>

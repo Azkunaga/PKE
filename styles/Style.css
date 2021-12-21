@@ -4,13 +4,13 @@ body{
 	font: 16px Playfair Display !important;
 }
 
-#page-wrap				{margin: 2% auto; color: white;}
+#page-wrap				{ color: white;}
 #page-wrap >.main 		{padding: 1%;
 						 margin-bottom: 1px; color: black;}
 
-section > div				{padding: 5px;}
-header, nav, section		{background: #eee;}
-footer					{background: #eee; text-align: center;}
+section > div				{padding: 20px;}
+header, nav, section		{background: white;}
+
 nav span             				{ margin: 0px 10px 0px 0px;
 						width: 100%;
 						display: inline-block;}
@@ -110,4 +110,17 @@ i.bi.bi-person-circle{
   .main{
     min-height: 80%;
   }
+
+
+html{  
+  position: relative;
+  min-height: 100%;
+}
+
+footer{
+  background: #eee; 
+  text-align: center; 
+  padding: 20px;
+}
+
 
