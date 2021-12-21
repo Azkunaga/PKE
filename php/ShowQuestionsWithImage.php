@@ -28,7 +28,7 @@
   <?php include '../php/DbConfig.php' ?>
   <section class="main" id="s1">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center mx-auto">
 
           <?php
             $esteka = mysqli_connect ($zerbitzaria, $erabiltzailea, $gakoa, $db) or die ("Errorea Dbra konektatzerakoan");
@@ -36,7 +36,7 @@
             $ema= mysqli_query($esteka, $sql);
             while ( $row= mysqli_fetch_array($ema, MYSQLI_ASSOC)) {
               echo '<div class="d-grid col-6 mb-3">
-              <span><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse'.$row['id'].'" aria-expanded="false" aria-controls="collapseExample">'.$row['galdera'].'</button>
+              <span><button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse'.$row['id'].'" aria-expanded="false" aria-controls="collapseExample" style="width: 100%; background-color: #CDCDD3">'.$row['galdera'].'</button>
               </span>
               <div class="collapse" id="collapse'.$row['id'].'">
                 <div class="card card-body ">
