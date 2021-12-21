@@ -8,9 +8,10 @@
   <?php include '../php/Menus.php' ?>
 
   <section class="main" id="s1">
-    <div>
+    <div style="text-align: center">
 
-      <h2>Quiz: galderen jokoa</h2>
+      <h2>Quiz: galderen jokoa</h2><br>
+      <img src="../images/quiz.png">
 
     </div>
   </section>

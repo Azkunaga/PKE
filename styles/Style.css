@@ -9,6 +9,7 @@ body{
 						 margin-bottom: 1px; color: black;}
 
 section > div				{padding: 20px;}
+
 header, nav, section		{background: white;}
 
 nav span             				{ margin: 0px 10px 0px 0px;
@@ -106,10 +107,6 @@ i.bi.bi-person-circle{
     background: #125688;
     color: white;
   }
-  
-  .main{
-    min-height: 80%;
-  }
 
 
 html{  
@@ -119,8 +116,10 @@ html{
 
 footer{
   background: #eee; 
-  text-align: center; 
-  padding: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .navbar-nav.navbar-center {
@@ -153,7 +152,11 @@ a:link, a:visited, a:active {
 }
 
 #hustu_img{
-  position: absolute; right: 0; top: 20%;" class="btn btn-primary btn-lg;
+  position: absolute; right: 0; top: 20%;
+}
+
+.active{
+  font-weight: 700;
 }
 
 

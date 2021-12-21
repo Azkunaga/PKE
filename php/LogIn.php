@@ -13,8 +13,7 @@
 			<div class="col-sm-4 mx-auto">
 				<div id="divA">
 					<form id="Login" name="login" method="post" action="LogIn.php" enctype="multipart/form-data">
-						<fieldset>
-							<legend>Saio hasiera panela</legend><br>
+							<h2 style="text-align: center;">Logeatu Quiz aplikazioan</h2><br>
 							<div class="mb-3">
 							  <input type="email" class="form-control" id="emaillogin" name="emaillogin" placeholder="Sartu zure email-a">
 							</div>
@@ -23,9 +22,8 @@
 							</div>
 							<div class="d-grid col-12">
 								<input type="submit" value="Saioa Hasi" class="btn btn-primary" id="submitlogin" name="submitlogin">
-								<a href="Berreskuratu.php">Pasahitza ahaztu duzu?</a><br>
+								<a href="Berreskuratu.php" style="text-align: right;">Pasahitza ahaztu duzu?</a><br>
 							</div>
-						</fieldset>
 					</form>
 					<div class="d-grid col-12">
 						<button class="btn btn-primary" onclick="window.location='SignUp.php'">Erregistratu</button>

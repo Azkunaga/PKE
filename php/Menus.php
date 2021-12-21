@@ -48,7 +48,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <!--<a class="navbar-brand text-light" href="#">Quiz Jokoa</a>-->
+    <a class="navbar-brand d-lg-none" id="izenburua" href="#">Quiz Jokoa</a>
     <div class="offcanvas offcanvas-start-lg bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header d-flex d-lg-none">
         <?php
@@ -84,7 +84,7 @@
       <div class="offcanvas-body p-lg-0">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-light" href="Layout.php" aria-current="page">Quiz Jokoa</a>
+            <a class="nav-link text-light active" href="Layout.php" aria-current="page">Quiz Jokoa</a>
           </li>
           <?php
           if(isset($_SESSION['email'])){
@@ -103,14 +103,6 @@
         </ul>
       </div>
     </div>
-    <!--<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-      <li class="nav-item">
-        <a class="nav-link" href="Layout.php" aria-current="page">Quiz Jokoa</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Credits.php">Kredituak</a>
-      </li>
-    </ul>-->
   </div>
 </nav>
 </div>
