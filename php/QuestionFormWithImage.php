@@ -67,6 +67,7 @@
     </div>
   </div>
   </section>
+
   <?php include '../html/Footer.html' ?>
 </body>
 </html>

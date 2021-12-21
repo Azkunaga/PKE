@@ -89,7 +89,16 @@
 
               echo '<br>Galdera bat JSON fitxategian gehitu da<br>';
               echo "<p><a href='ShowJsonQuestions.php'>Galderak ikusteko</a></p>";
+              ?>
 
+              <script>
+                var modal = document.getElementById('besteBatSortu');
+                console.log(modal);
+                modal.style.display="block";
+                //modal.style.paddingRight = "17px";
+                modal.className="modal fade show";
+              </script>
+            <?php
 						}
 					}else{
 						echo "<br><br><p><a href='QuestionFormWithImage.php'>Berriro saiatu!</a></p><br><br>";
@@ -101,10 +110,25 @@
 				}
 			}else{
 				echo "<br><br><p><a href='QuestionFormWithImage.php'>Berriro saiatu!</a></p><br><br>";
-				die("Derrigorezko eremuak ez dira bete");
+				die("Derrigorrezko eremuak ez dira bete");
 			}
 		?>
     </div>
+    <!-- Modal -->
+  <div class="modal fade" id="besteBatSortu" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Galderak Ikusi</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" id="submit" class="btn btn-primary">Galdera gehitu</button>
+          <button type="button" class="btn btn-primary">Beste galdera bat sortu</button>
+        </div>
+      </div>
+    </div>
+  </div>
   </section>
   <?php include '../html/Footer.html' ?>
 </body>
