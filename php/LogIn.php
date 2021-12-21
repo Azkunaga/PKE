@@ -23,7 +23,7 @@
 							</div>
 							<div class="d-grid col-12">
 								<input type="submit" value="Saioa Hasi" class="btn btn-primary" id="submitlogin" name="submitlogin">
-								<a href="Berrezkuratu.php">Pasahitza ahaztu duzu?</a><br>
+								<a href="Berreskuratu.php">Pasahitza ahaztu duzu?</a><br>
 							</div>
 						</fieldset>
 					</form>

@@ -58,3 +58,56 @@ i.bi.bi-person-circle{
     transform: translateX(-100%);
   }
 }
+
+.imgder{
+    float:right; /*para ponerlo a la derecha */
+    margin:20px; /* un margen cualquiera */
+  }
+
+  .imgcen{
+    float:center; /*para ponerlo a la derecha */
+    margin:20px; /* un margen cualquiera */
+  }
+
+  .imgizq{
+    float:left; /*para ponerlo a la izquierda */
+    margin:20px; /* un margen cualquiera */
+  }
+  .imgizq img, .imgder img, .imgcen img{
+    display: block;
+    margin: 0 auto; /* centrar imagen */
+  }
+  .imgizq p, .imgder p, .imgcen p{
+    text-align:center; 
+    font-weight:bold; 
+    font-size: 14px; 
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .main{
+    min-height: 80%;
+  }
+
