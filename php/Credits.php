@@ -27,7 +27,7 @@
 			<p>Aritz Plazaola</p>
 		  </div>
 		  <div class="col-4">
-			<img class="img-responsive" src="../images/poxito.jpg" style="width: 20vmax"> <!--Jon sartu zure argazkia -->
+			<img class="img-responsive" src="../images/poxito.jpg" style="width: 20vmax">
 			<p>Jon Jauregi</p>
 		  </div>
 	  </div>

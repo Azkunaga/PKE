@@ -9,21 +9,24 @@
   <?php include '../php/Menus.php' ?>
   <?php include '../php/DbConfig.php' ?>
   <section class="main" id="s1">
-  	 <!-- Modal -->
-  <div class="modal fade show" id="besteBatSortu" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Galderak Ikusi</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  	<!-- Modal -->
+        <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Galdera sortua</h5>
+                <button type="button" class="btn-close" onclick="window.location='QuestionFormWithImage.php'" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Galdera arazo gabe sortu da!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="window.location='QuestionFormWithImage.php'"data-bs-dismiss="modal">Beste galdera bat sortu</button>
+                <button type="button" class="btn btn-primary" onclick="window.location='ShowQuestionsWithImage.php'"data-bs-dismiss="modal">Galderak ikusi</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button type="submit" id="submit" class="btn btn-primary">Galdera gehitu</button>
-          <button type="button" class="btn btn-primary">Beste galdera bat sortu</button>
-        </div>
-      </div>
-    </div>
-  </div>
     <div>
 		<?php
 			$hutsa = '/^\s*$/';
@@ -54,22 +57,18 @@
 						}
 
 						$esteka = mysqli_connect($zerbitzaria, $erabiltzailea, $gakoa, $db) or die ("Errorea Dbra konektatzerakoan");
-						$sql="INSERT INTO Question(email,galdera,zuzena,okerra1,okerra2,okerra3,zailtasuna,gaia,image) VALUES('$_GET[email]', '$_POST[galdera]', '$_POST[zuzena]', '$_POST[okerra1]',
+						$sql="INSERT INTO Question(email,galdera,zuzena,okerra1,okerra2,okerra3,zailtasuna,gaia,image) VALUES('$emaila', '$_POST[galdera]', '$_POST[zuzena]', '$_POST[okerra1]',
 						'$_POST[okerra2]', '$_POST[okerra3]', $_POST[zailtasuna], '$_POST[gaia]', '$imgContent')";
 						$ema = mysqli_query($esteka, $sql);
 						if (!$ema) {
 							echo "<br><br><p><a href='QuestionFormWithImage.php'>Berriro saiatu!</a></p><br><br>";
 							die("Errorea query-a gauzatzerakoan: ".mysqli_error($esteka));
 						}else{
-							echo "Galdera bat gehitu da datu-basean!<br><br>";
-							echo "<p><a href='ShowQuestionsWithImage.php'>Galderak ikusteko</a></p>";
-							echo '<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="update()" style="display: none;"></button>';
+							echo '<button type="button" id="modalBtn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="update()" style="display: none;"></button>';
 							mysqli_close($esteka);
               ?>
               <script>
-                var modal = document.getElementById('besteBatSortu');
-                console.log(modal);
-                modal.className="modal fade show";
+                document.getElementById('modalBtn').click();
               </script>
             <?php
 						}
@@ -87,24 +86,7 @@
 			}
 		?>
     </div>
-   <!-- Modal -->
-        <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Galdera sortua</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <p>Galdera arazo gabe sortu da!</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Beste galdera bat sortu</button>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Galderak ikusi</button>
-              </div>
-            </div>
-          </div>
-        </div>
+   
   </section>
   <?php include '../html/Footer.html' ?>
 </body>
