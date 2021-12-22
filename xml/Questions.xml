@@ -40,4 +40,4 @@
 			<response>Aurrekoak okerrak</response>
 		</incorrectResponses>
 	</assessmentItem>
-</assessmentItems>
+<assessmentItem author="admin@ehu.es" subject="Eguraldia"><itemBody><p>Gaurko eguraldia?</p></itemBody><correctResponse><response>Hodeitsua</response></correctResponse><incorrectResponses><response>Euria</response><response>Besteak GEzurra</response><response>Egia</response></incorrectResponses></assessmentItem><assessmentItem author="admin@ehu.es" subject="Eguraldia"><itemBody><p>Gaurko eguraldia?</p></itemBody><correctResponse><response>Hodeitsua</response></correctResponse><incorrectResponses><response>Euria</response><response>Besteak GEzurra</response><response>Egia</response></incorrectResponses></assessmentItem></assessmentItems>

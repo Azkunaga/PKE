@@ -10,7 +10,7 @@
   }
   </style>
 
-  <script type="text/javascript" src="../js/ValidateFieldsQuestionJS.js"></script>
+  <script type="text/javascript" src="../js/ValidateFieldsQuestionJQ.js"></script>
   <script type="text/javascript" src="../js/ShowImageInForm.js"> </script>
 </head>
 
@@ -19,10 +19,10 @@
   <section class="main" id="s1">
     <div class="row">
     <div id="divA" class="col-sm-6 mx-auto">
-      <form id="galderenF" name="galderenF" action="AddQuestionWithImage.php?email=$email" method="post" enctype="multipart/form-data">
+      <form id="galderenF" name="galderenF" action="AddQuestionWithImage.php?" method="post" enctype="multipart/form-data">
         <div class="mb-3">
           <label for="galdera">Galdera</label>
-          <input type="text" id="galdera" name="galdera" class="form-control" onblur="validateGaldera()" placeholder="Sartu galdera">
+          <input type="text" id="galdera" name="galdera" class="form-control" placeholder="Sartu galdera">
         </div>
         <div class="mb-3">
           <label for="zuzena">Erantzun zuzena</label>

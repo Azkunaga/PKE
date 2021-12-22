@@ -9,6 +9,21 @@
   <?php include '../php/Menus.php' ?>
   <?php include '../php/DbConfig.php' ?>
   <section class="main" id="s1">
+  	 <!-- Modal -->
+  <div class="modal fade show" id="besteBatSortu" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Galderak Ikusi</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" id="submit" class="btn btn-primary">Galdera gehitu</button>
+          <button type="button" class="btn btn-primary">Beste galdera bat sortu</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <div>
 		<?php
 			$hutsa = '/^\s*$/';
@@ -49,53 +64,10 @@
 							echo "Galdera bat gehitu da datu-basean!<br><br>";
 							echo "<p><a href='ShowQuestionsWithImage.php'>Galderak ikusteko</a></p>";
 							mysqli_close($esteka);
-
-							$xml = simplexml_load_file('../xml/Questions.xml');
-							$assessmentItem = $xml->addChild('assessmentItem');
-							$assessmentItem->addAttribute('author', $emaila);
-							$assessmentItem->addAttribute('subject', $_POST['gaia']);
-							$itemBody = $assessmentItem->addChild('itemBody');
-							$itemBody->addChild('p', $_POST['galdera']);
-							$correctResponse = $assessmentItem->addChild('correctResponse');
-							$correctResponse->addChild('response',$_POST['zuzena']);
-							$incorrectResponses = $assessmentItem->addChild('incorrectResponses');
-							$incorrectResponses->addChild('response',$_POST['okerra1']);
-							$incorrectResponses->addChild('response',$_POST['okerra2']);
-							$incorrectResponses->addChild('response',$_POST['okerra3']);
-							$xml->asXML('../xml/Questions.xml');
-
-							echo "Galdera bat gehitu da xml fitxategian!<br><br>";
-							echo "<p><a href='ShowXmlQuestions.php'>Galderak ikusteko</a></p>";
-
-              $data=file_get_contents("../json/Questions.json");
-              $array=json_decode($data);
-              $assessmentItemJson = new stdClass();
-              $assessmentItemJson->subject=$_POST['gaia'];
-              $assessmentItemJson->author=$emaila;
-              $assessmentItemJson->itemBody->p=$_POST['galdera'];
-              $assessmentItemJson->correctResponse->response=$_POST['zuzena'];
-              $assessmentItemJson->incorrectResponses->response[0]=$_POST['okerra1'];
-              $assessmentItemJson->incorrectResponses->response[1]=$_POST['okerra2'];
-              $assessmentItemJson->incorrectResponses->response[2]=$_POST['okerra3'];
-
-              $galderaarray[0] = $assessmentItemJson;
-              array_push($array->assessmentItems, $galderaarray[0]);
-
-              $jsonData = json_encode($array);
-              $jsonData = str_replace('{', '{'.PHP_EOL, $jsonData);
-              $jsonData = str_replace(',', ','.PHP_EOL, $jsonData);
-              $jsonData = str_replace('}', PHP_EOL.'}', $jsonData);
-              file_put_contents("../json/Questions.json",$jsonData);
-
-              echo '<br>Galdera bat JSON fitxategian gehitu da<br>';
-              echo "<p><a href='ShowJsonQuestions.php'>Galderak ikusteko</a></p>";
               ?>
-
               <script>
                 var modal = document.getElementById('besteBatSortu');
                 console.log(modal);
-                modal.style.display="block";
-                //modal.style.paddingRight = "17px";
                 modal.className="modal fade show";
               </script>
             <?php
@@ -114,21 +86,7 @@
 			}
 		?>
     </div>
-    <!-- Modal -->
-  <div class="modal fade" id="besteBatSortu" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Galderak Ikusi</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" id="submit" class="btn btn-primary">Galdera gehitu</button>
-          <button type="button" class="btn btn-primary">Beste galdera bat sortu</button>
-        </div>
-      </div>
-    </div>
-  </div>
+   
   </section>
   <?php include '../html/Footer.html' ?>
 </body>

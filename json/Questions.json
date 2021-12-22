@@ -43,5 +43,35 @@
 "Aizkorri",
 "Orkatzategi"]
 }
+},
+{
+"subject":"Eguraldia",
+"author":"admin@ehu.es",
+"itemBody":{
+"p":"Gaurko eguraldia?"
+},
+"correctResponse":{
+"response":"Hodeitsua"
+},
+"incorrectResponses":{
+"response":["Euria",
+"Besteak GEzurra",
+"Egia"]
+}
+},
+{
+"subject":"Eguraldia",
+"author":"admin@ehu.es",
+"itemBody":{
+"p":"Gaurko eguraldia?"
+},
+"correctResponse":{
+"response":"Hodeitsua"
+},
+"incorrectResponses":{
+"response":["Euria",
+"Besteak GEzurra",
+"Egia"]
+}
 }]
 }
