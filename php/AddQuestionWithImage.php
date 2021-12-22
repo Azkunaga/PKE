@@ -63,6 +63,7 @@
 						}else{
 							echo "Galdera bat gehitu da datu-basean!<br><br>";
 							echo "<p><a href='ShowQuestionsWithImage.php'>Galderak ikusteko</a></p>";
+							echo '<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="update()" style="display: none;"></button>';
 							mysqli_close($esteka);
               ?>
               <script>
@@ -86,7 +87,24 @@
 			}
 		?>
     </div>
-   
+   <!-- Modal -->
+        <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Galdera sortua</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Galdera arazo gabe sortu da!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Beste galdera bat sortu</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Galderak ikusi</button>
+              </div>
+            </div>
+          </div>
+        </div>
   </section>
   <?php include '../html/Footer.html' ?>
 </body>
