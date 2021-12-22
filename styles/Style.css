@@ -20,7 +20,7 @@ nav span             				{ margin: 0px 10px 0px 0px;
 
 #output{
 	display: none;
-	height: 150px;
+	height: 17vh;
   float: left;
 }
 
@@ -160,7 +160,13 @@ a:link, a:visited, a:active {
 }
 
 #hustu_img{
-  position: absolute; right: 0; top: 20%;
+  position: absolute; 
+  right: 0; 
+  top: 20%;
+}
+
+#defaultImg{
+  z-index: -2;
 }
 
 .active{

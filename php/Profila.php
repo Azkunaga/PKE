@@ -34,7 +34,7 @@
             $row= mysqli_fetch_array($ema, MYSQLI_ASSOC);
             $nireGalderak = rand(0, 1000);
             $galderaGuztiak = rand(1001, 20000);
-              echo '<div class="bg-primary" style="width: 100%"><br><img src="data:image/jpg;charset=utf8;base64,'.base64_encode($row['image']).'" style=" border-radius:50%; height: 25%; width: 25%; padding-top: 0.5em"/><br></div><br>
+              echo '<div style="width: 100%; background-color:#228FF2;"><br><img src="data:image/jpg;charset=utf8;base64,'.base64_encode($row['image']).'" style=" border-radius:50%; height: 25%; width: 25%; padding-top: 0.5em"/><br></div><br>
                   <h2>'.$row['deitura'].'</h2><br><h4>'.$row['mota'].'</h4><br><div class="row align-items-center">
           <div class="col-6">Nire galderak: '.$nireGalderak.'</div><div class="col-6">Galdera guztiak: '.$galderaGuztiak.'</div><br><br><br>';
 
