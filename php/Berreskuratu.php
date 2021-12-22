@@ -12,31 +12,28 @@
   <section class="main" id="s1">
     <div class="row">
       <div id="divA" class="col-sm-4 mx-auto">
-      <fieldset id="berrez">
-        <legend>Pasahitza berrezkuratu panela</legend><br>
 
-        <form id="KodeaEmail" name="KodeaEmail" action="Berrezkuratu.php" method="post" enctype="multipart/form-data" autocomplete="off">
+        <form id="KodeaEmail" name="KodeaEmail" action="Berreskuratu.php" method="post" enctype="multipart/form-data" autocomplete="off">
           <div id="emailSartu" name="emailSartu">
-            <label for="emailBerrez">Email:</label>
-            <input type="email" id="emailBerrez" name="emailBerrez" autocomplete="nope" required><br><br>
+            <label for="emailBerrez">Email</label>
+            <input type="email" id="emailBerrez" class="form-control" name="emailBerrez" autocomplete="nope" placeholder="Kodigoa korreo honetara helduko da" required><br><br>
           </div>
 
           <div id="kodeaSartu" name="kodeaSartu" style="display: none;">
             <label for="kodea">Emaileko kodea sartu:</label>
-            <input type="text" id="kodea" name="kodea" autocomplete="off"><br><br>
+            <input type="text" id="kodea" class="form-control" name="kodea" placeholder="Emailera heldutako kodea sartu" autocomplete="off"><br><br>
           </div>
 
           <div id="pasahitzaSartu" name="pasahitzaSartu" style="display: none;">
             <label for="pasB">Pasahitz berria:</label>
-            <input type="password" id="pasB" name="pasB" minlength="8" autocomplete="new-password"><br><br>
+            <input type="password" id="pasB" class="form-control"name="pasB" minlength="8" placeholder="Pasahitza berria sartu"autocomplete="new-password"><br>
             <label for="pasBe">Pasahitz berria errepikatu:</label>
-            <input type="password" id="pasBe" name="pasBe" autocomplete="new-password"><br><br>
+            <input type="password" id="pasBe" class="form-control" name="pasBe" placeholder="Pasahitza berriz sartu" autocomplete="new-password"><br>
           </div>
-
-          <input type="submit" id="submit" value="OK"><br><br>
+          <div class="d-grid col-12">
+            <input type="submit" class="btn btn-primary" id="submit" value="OK"><br>
+          </div>
         </form>
-      </fieldset>
-
       <?php
         if ($_SERVER["REQUEST_METHOD"]=="POST") {
 

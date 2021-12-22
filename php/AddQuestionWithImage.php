@@ -39,7 +39,7 @@
 						}
 
 						$esteka = mysqli_connect($zerbitzaria, $erabiltzailea, $gakoa, $db) or die ("Errorea Dbra konektatzerakoan");
-						$sql="INSERT INTO Question(email,galdera,zuzena,okerra1,okerra2,okerra3,zailtasuna,gaia,image) VALUES('$_GET[email]', '$_POST[galdera]', '$_POST[zuzena]', '$_POST[okerra1]',
+						$sql="INSERT INTO Question(email,galdera,zuzena,okerra1,okerra2,okerra3,zailtasuna,gaia,image) VALUES('$emaila', '$_POST[galdera]', '$_POST[zuzena]', '$_POST[okerra1]',
 						'$_POST[okerra2]', '$_POST[okerra3]', $_POST[zailtasuna], '$_POST[gaia]', '$imgContent')";
 						$ema = mysqli_query($esteka, $sql);
 						if (!$ema) {
